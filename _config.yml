@@ -21,14 +21,14 @@ repository               : "pranavramachandra1/pranavramachandra.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  avatar           : "headshot_pranav.jpg"
+  name             : "Pranav Ramachandra"
+  pronouns         : # "he/him"
+  bio              : "UC Berkeley student interested in SWE+ML"
+  location         : "Berkeley, CA"
+  employer         : "Univerisity of California, Berkeley"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "pranavramachandra@berkeley.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -212,6 +212,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -247,6 +250,15 @@ defaults:
   - scope:
       path: ""
       type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
     values:
       layout: single
       author_profile: true
