@@ -12,7 +12,7 @@ title                    : "Pranav Ramachandra"
 title_separator          : "-"
 name                     : &name "Pranav Ramachandra"
 description              : &description "DS & ChemE @ UC Berkeley"
-url                      : https://pranavramachandra.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pranavramachandra1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/pranavramachandra.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "pranavramachandra1/pranavramachandra.github.io"
 
