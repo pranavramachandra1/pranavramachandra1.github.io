@@ -1,8 +1,8 @@
 ---
 title: "Workout Tracker"
 collection: projects
-type: "Undergraduate course"
-permalink: /projects/email-classification
+type: "personal project"
+permalink: /projects/workout-tracker
 ---
 
 Web applications that tracks your workouts and progress.
@@ -22,3 +22,4 @@ Here are some views of the UI I developed, since I took this web page down. I up
 
 
 ###### Languages: Python, JS, HTML, CSS
+###### Relevant Libraries: Flask, MySQL, sqlalchemy, Pandas
