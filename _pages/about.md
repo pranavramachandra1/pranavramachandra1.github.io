@@ -13,6 +13,6 @@ My interests lie within **deep learning, statistics, and app development**. I ha
 
 I've spent a lot of time as an engineer and experimentalist, and I've also found a strong passion in software engineering. My engineering internship experiences include process engineering at Chevron, and cell engineering & data science at Tesla. I've also spent 3 years studying liquid-state lithium ion batteries in the McCloskey Group on various projects and my own.
 
-**Currently, I am a software engineering intern at Quantumscape**, where I am working on tools for engineers to interface with their data, and I am developing a deep learning model that predicts the number of cycles a cell will last based on time series electrical data. 
+**I recently finished a software engineering internship at Quantumscape**, where I was working on tools for engineers to interface with their data. I also developed a deep learning model that predicts the number of cycles a cell will last based on time series electrical data, and working on detecting hardward anomalies using image transformations of electrical signal data. 
 
 Outside of my career, I love **weightlifting, running, hiking**, and pretty much anything outdoors. I am a huge **Chicago Bulls** fan, and a hopeful Bears fan. I am also an **amateur DJ** (please feel free to checkout my mixes under [chia p](https://soundcloud.com/pranav-ramachandra))!
