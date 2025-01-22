@@ -13,11 +13,28 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.1.2 # Ensure this matches your Jekyll requirements
-        bundler-cache: true # Caches gems between builds
+    - name: Install dependencies for ruby-build
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y git curl autoconf bison build-essential \
+          libssl-dev libyaml-dev libreadline-dev zlib1g-dev libncurses5-dev \
+          libffi-dev libgdbm-dev
+
+    - name: Install ruby-build
+      run: |
+        git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
+        sudo ~/.ruby-build/install.sh
+
+    - name: Build and install Ruby 3.1.4
+      run: |
+        ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+        touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+        echo "::add-path::/opt/hostedtoolcache/Ruby/3.1.4/x64/bin"
+
+    - name: Verify Ruby installation
+      run: |
+        ruby --version
+        gem --version
 
     - name: Install dependencies
       run: |
