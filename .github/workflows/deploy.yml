@@ -1,48 +1,36 @@
-name: Deploy Jekyll Site
-
+name: Deploy Jekyll site to Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: Install dependencies for ruby-build
+    - name: Set up Ruby
       run: |
         sudo apt-get update
-        sudo apt-get install -y git curl autoconf bison build-essential \
-          libssl-dev libyaml-dev libreadline-dev zlib1g-dev libncurses5-dev \
-          libffi-dev libgdbm-dev
-
-    - name: Install ruby-build
-      run: |
-        git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
-        sudo ~/.ruby-build/install.sh
-
-    - name: Build and install Ruby 3.1.4
-      run: |
-        ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+        sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+        git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+        echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+        source ~/.bashrc
+        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+        source ~/.bashrc
+        rbenv install 3.1.4
+        rbenv global 3.1.4
         touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
-        echo "::add-path::/opt/hostedtoolcache/Ruby/3.1.4/x64/bin"
-
-    - name: Verify Ruby installation
-      run: |
-        ruby --version
-        gem --version
 
     - name: Install dependencies
-      run: |
-        bundle install
+      run: bundle install
 
-    - name: Build Jekyll site
-      run: |
-        bundle exec jekyll build
+    - name: Build the site
+      run: bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
