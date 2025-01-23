@@ -16,11 +16,11 @@ Here's a nice picture of the system that I designed. I used Heroku to hosy my ap
 
 ![Workout Webapp System](workout_webapp_system.png)
 
-A funny story about this project is that I tried to build this thing after just completing my intro to prograaming course at UC Berkeley (CS61A). I followed a bunch fo YouTube tutorials and sat and coded the ugliest app ever, and the entire process took 4 weeks (my entire winter break)
+A funny story about this project is that I tried to build this thing after just completing my intro to programing course at UC Berkeley (CS61A). I followed a bunch fo YouTube tutorials and sat and coded the ugliest app ever, and the entire process took 4 weeks (my entire winter break).
 
 Now, with a lot more experience under my belt, I rebuilt this app from scratch, redid the system design, and deployed the app successfully in less than 2 days. This was a fun little project, and I am excited for the many more to come.
 
-Feel free to see how I built this app [here](https://github.com/pranavramachandra1/workout_webapp) Thanks for stopping by lol
+Feel free to see how I built this app [here](https://github.com/pranavramachandra1/workout_webapp)!
 
 
 ###### Languages: Python, JS, HTML, CSS
