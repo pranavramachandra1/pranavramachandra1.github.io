@@ -24,4 +24,4 @@ Feel free to see how I built this app [here](https://github.com/pranavramachandr
 
 
 ###### Languages: Python, JS, HTML, CSS
-###### Relevant Libraries: Flask, MySQL, sqlalchemy, Pandas
+###### Relevant Libraries: Flask, Twilio, PyMongo (MongoDB)
