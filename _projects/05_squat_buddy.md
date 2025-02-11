@@ -23,6 +23,10 @@ I developed a [python app](https://squatbuddy-app-a8afe5b7d5f8.herokuapp.com) th
 * Making the model faster. Currently, I have deployed my model as a microservice, and use this exposed endpoint to make batch calls a bit more efficient.
 * Increasing the accuracy of the model: currently, the model is a multi-class classifier. I have the app working (which is cool), but I am diving deeper on making this model a bit more robust.
 
+Finally, here's a sketch of the system I designed to host SquatBuddy:
+
+![SquatBuddy System](squatbuddy_system.png)
+
 Feel free to checkout my project [here](https://squatbuddy-app-a8afe5b7d5f8.herokuapp.com)!
 
 
