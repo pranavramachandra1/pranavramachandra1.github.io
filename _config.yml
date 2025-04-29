@@ -21,7 +21,7 @@ repository               : "pranavramachandra1/pranavramachandra1.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot_pranav.jpg"
+  avatar           : "2M0A3414.jpg"
   name             : "Pranav Ramachandra"
   pronouns         : # "he/him"
   bio              : "UC Berkeley student interested in SWE+ML"
@@ -72,6 +72,7 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # URL
+  substack         : # URL
 
 
 # Site Settings
